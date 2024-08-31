@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-pattern {
+  background-image: url('/pattern2.png');
+  background-size: cover; /* or "contain" depending on the effect you want */
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
